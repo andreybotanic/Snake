@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Змейка - игра
+		</title>
+		<link rel="stylesheet" href="css/hebi.css" />
+		<script language="javascript" type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script language="javascript" type="text/javascript" src="js/game.js"></script>
+		<script src="js/ion.sound.min.js"></script>
+	</head>
+	<body onkeydown="keycheck()">
+		<div class = "textbox" id = "textscore">SCORE</div>
+		<div id = "score1" class = "textbox score"></div>
+		<div id = "field"></div>
+		<div id = "cover"></div>
+		<div class = "form big hide">
+			<div class = 'textbox gameover'>GAME OVER</div>
+			<div class = 'button width' onclick = 'records()'>Нажмите для продолжения</div>
+		</div>
+		<button id="step" class = "hide"></button>
+		<button id="eat" class = "hide"></button>
+		<button id="boom" class = "hide"></button>
+	</body>
+</html>
